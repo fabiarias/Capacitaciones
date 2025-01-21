@@ -1,3 +1,3 @@
-<H1>Mis Practicas en las diversas capacitaciones</H1>
+<H1>Mis Practicas en las capacitaciones</H1>
 
-<P>Repositorio enfocado en compartir los diversos codigos propuestos en la realizacion de las diversas capacitaciones que he realizado</P>
+<P>Repositorio enfocado en compartir archivos que he creado como parte de las practicas y retos propuestos en las diversas capacitaciones que he realizado a través de diferentes plataformas como Coursera, Udemy, Alura One Oracle y otras a través de videos en youtube, sobre los cuales se iran colocando los creditos.</P>
