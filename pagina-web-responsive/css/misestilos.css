@@ -1,0 +1,337 @@
+/*importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Reseteo los estilos por defecto de los navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Creo las variables de colores que usaré en la página */
+
+:root{
+    /*Colores de la paleta de colores de la página*/
+    --color-fondo: #6E6E6E;
+    --color-texto: #FEFFFF;
+    --color-botones:#BDFF36;
+    --color-hoover:#F6F6F6;
+    --color-texto-botones:#17252A;
+
+    /*Fuentes de la página*/
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-texto: 'Lato', sans-serif;
+}
+/*Colocar el desplazamiento suave en la página*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Coloco los estilos generales de la página. Debo tratar de iniciar a dar 
+  estilos pensando en mobile first*/
+  
+  
+body{
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+
+}
+
+h1{font-size: 3.5em;
+    font-family:  var(--fuente-titulos);}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{ font-size: 1.25em;
+    font-family: var(--fuente-texto);}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight:bold ;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--color-botones);
+    color: var(--color-texto-botones);
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2PX 2PX 10PX rgba(0,0,0,0.5);
+}
+button:hover{
+    background-color: var(--color-hoover);
+}
+
+.header__container{
+    max-width: 1400px;
+    margin: auto;
+}
+.introduccion__container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.caracteristicas__container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#nuestros-programas .container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: var(--color-botones);
+}
+header{
+    background-color: rgb(30,30,30);
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+header .header__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-botones);
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+header a:hover{
+    color: var(--color-botones);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('../media/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.introduccion__container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('../media/front-end.jpg');
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('../media/full-stack.jpg');
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('../media/python.jpg');
+}
+
+.caracteristicas__container{
+    text-align: center;
+    padding:  200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+#aplica-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    height: 80vh;
+}
+
+#aplica-ya h2{
+    font-size: 9vh;
+}
+
+#aplica-ya button{
+    font-size: 5vh;
+}
+
+
+.footer__container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer p{
+    padding: 12px;
+    color: var(--color-texto);
+}
+
+/*Vamos a trabajar mediante media-query para crear la 
+version desktop de la página*/
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .header__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20PX;
+    }
+
+    .introduccion__container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduccion__container h2{
+        margin-top: 0px;
+    }
+    .introduccion__container .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url('../media/somos-proya.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+    #nuestros-programas .carta{
+        padding: 15px;
+    }
+
+    #caracteristicas{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("../media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .caracteristicas__container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #aplica-ya h2{
+        font-size: 5em;
+    }
+
+    #aplica-ya button{
+        margin-top: 50px;
+    }
+
+    .footer__container{
+        justify-content: flex-end;
+    } 
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
