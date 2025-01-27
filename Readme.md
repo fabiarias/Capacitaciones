@@ -5,3 +5,8 @@
 <ul>
   <li>Reto Amigo Secreto propuesto en Alura ruta https://fabiarias.github.io/Capacitaciones/amigo-secreto/</li>
 </ul>
+
+<p>Siguiendo el curso creado por David Choi, Crea una Página Web Responsive con HTML y CSS.  </p>
+<ul>
+  <li>Ver página</li>
+</ul>
