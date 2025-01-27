@@ -8,5 +8,5 @@
 
 <p>Siguiendo el curso creado por David Choi, Crea una Página Web Responsive con HTML y CSS.  </p>
 <ul>
-  <li>Ver página</li>
+  <li>Ver página creada</li>
 </ul>
